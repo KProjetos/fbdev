@@ -2,32 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  .direction-col-center {
+    @apply: flex flex-col items-center justify-center py-[3em];
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .direction-col {
+    @apply: flex flex-col justify-center;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .direction-row {
+    @apply: flex flex-row items-center justify-evenly;
+  }
+
+  .titleBox {
+    @apply: px-2 pb-3 h-fit direction-col border-l-2 border-details leading-[1.3];
+  }
+
+  .title {
+    @apply: text-details text-[1.7em] font-aref;
+  }
+
+  .subtitle {
+    @apply: text-[1.3em] font-aref;
   }
 }

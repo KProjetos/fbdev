@@ -25,8 +25,10 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet" />
       </Head>
       <html lang="pt-br">
-        <Header/>
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          <Header/>
+          {children}
+        </body>
       </html>
     </>
   );

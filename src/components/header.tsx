@@ -6,7 +6,7 @@ import Services from "@/app/images/services";
 function Header() {
   return (
     <>
-      <header className="w-full flex flex-col items-center justify-center my-4">
+      <header className="w-full flex flex-col items-center justify-center my-6">
         <section className="w-[90%] max-w-[1080px] flex flex-row items-center justify-between">
           <div className="">
             <Logo width={""} height={"50"} />

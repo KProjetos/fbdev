@@ -73,4 +73,8 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .bg-filter{
+    background-color: #0e0e0ec6;
+  }
 }

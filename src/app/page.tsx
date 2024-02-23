@@ -6,12 +6,12 @@ import "./globals.css";
 export default function Home() {
   return (
     <>
-      <section className="w-full flex flex-col items-center justify-center">
+      <section className="lg:w-full hidden lg:flex lg:flex-col lg:items-center lg:justify-center">
         <div className="w-full flex flex-row items-center justify-between">
           <div className="w-[50%] px-12 flex flex-col items-center justify-center">
             <p className={`${titleFont.className} text-5xl mb-10`}>Desenvolvimento de sites e sistemas </p>
             <p className={`${textFont.className} text-xl`}>Empresa com foco em criação,melhoria e desempenho atendendo a sua necessidade com inovação e estratégia. Agende uma reunião.</p>
-            <div className="flex flex-row items-center justify-between">
+            <div className="">
               <Button className="w-[150px] mx-4 my-8 rounded-xl" variant="default">AGENDAR</Button>
               <Button className="w-[150px] mx-4 my-8 rounded-xl" variant="default">PORTIFÓLIO</Button>
             </div>
@@ -21,6 +21,23 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="w-full h-full flex flex-col items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/fbdev-97ff9.appspot.com/o/site%2FIMG%20HEADER.png?alt=media&token=630f1dd5-ad37-4472-b887-5c85bc2f94c3')] bg-no-repeat bg-center  lg:hidden">
+        <div className="w-full h-full flex flex-col items-center justify-center py-[4.4rem] backdrop-brightness-50 bg-black/5">
+          <div className="w-[90%] max-w-[1080px] flex flex-col items-center justify-center ">
+            <div className="w-full flex flex-col items-center justify-center z-50">
+              <p className={`${titleFont.className} text-4xl mb-10`}>Desenvolvimento de sites e sistemas </p>
+              <p className={`${textFont.className} text-xl`}>Empresa com foco em criação,melhoria e desempenho atendendo a sua necessidade com inovação e estratégia. Agende uma reunião.</p>
+              <div className="w-full flex flex-row items-center justify-between mt-12">
+                <Button className="w-[150px] rounded-xl" variant="default">AGENDAR</Button>
+                <Button className="w-[150px] rounded-xl" variant="default">PORTIFÓLIO</Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TODO versao mobile */}
     </>
   );
 }

@@ -34,7 +34,7 @@
  
     --radius: 0.5rem;
 
-    --principal: #0C3B43;
+    --principal: #4C97A3;
   }
  
   .dark {
@@ -81,6 +81,10 @@
   }
 
   .bg-principal{
-    background-color: #4C97A3;
+    background-color: var(--principal);
+  }
+
+  .title-detail{
+    border-left: 2px solid var(--principal);
   }
 }

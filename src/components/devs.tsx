@@ -11,7 +11,7 @@ function Devs(){
                 <h2 className={`${titleFont.className} text-3xl text-white`}>
                     Desenvolvedores
                 </h2>
-                <ArrowTitle/>
+                <ArrowTitle color="white"/>
             </div>
 
             <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-evenly mt-12 text-white">

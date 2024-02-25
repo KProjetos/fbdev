@@ -3,6 +3,7 @@ import { textFont } from "./font/text";
 import { Button } from "@/components/ui/button"
 import "./globals.css";
 import Devs from "@/components/devs";
+import Steps from "@/components/steps";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
       </section>
 
       <Devs/>
+      <Steps/>
     </>
   );
 }

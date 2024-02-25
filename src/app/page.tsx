@@ -2,6 +2,7 @@ import { titleFont } from "./font/title";
 import { textFont } from "./font/text";
 import { Button } from "@/components/ui/button"
 import "./globals.css";
+import Devs from "@/components/devs";
 
 export default function Home() {
   return (
@@ -36,6 +37,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Devs/>
     </>
   );
 }

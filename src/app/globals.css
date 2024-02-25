@@ -33,6 +33,8 @@
     --ring: 222.2 84% 4.9%;
  
     --radius: 0.5rem;
+
+    --principal: #0C3B43;
   }
  
   .dark {
@@ -76,5 +78,9 @@
 
   .bg-filter{
     background-color: #0e0e0ec6;
+  }
+
+  .bg-principal{
+    background-color: #4C97A3;
   }
 }

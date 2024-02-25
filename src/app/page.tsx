@@ -1,5 +1,5 @@
-import { titleFont } from "./images/font/title";
-import { textFont } from "./images/font/text";
+import { titleFont } from "./font/title";
+import { textFont } from "./font/text";
 import { Button } from "@/components/ui/button"
 import "./globals.css";
 
@@ -12,8 +12,8 @@ export default function Home() {
             <p className={`${titleFont.className} text-5xl mb-10`}>Desenvolvimento de sites e sistemas </p>
             <p className={`${textFont.className} text-xl`}>Empresa com foco em criação,melhoria e desempenho atendendo a sua necessidade com inovação e estratégia. Agende uma reunião.</p>
             <div className="">
-              <Button className="w-[150px] mx-4 my-8 rounded-xl" variant="default">AGENDAR</Button>
-              <Button className="w-[150px] mx-4 my-8 rounded-xl" variant="default">PORTIFÓLIO</Button>
+              <Button className="w-[150px] mx-4 my-8 rounded-xl transform hover:-translate-y-1 hover:scale-110 transition ease-in duration-300" variant="default">AGENDAR</Button>
+              <Button className="w-[150px] mx-4 my-8 rounded-xl transform hover:-translate-y-1 hover:scale-110 transition ease-in duration-300" variant="default">PORTIFÓLIO</Button>
             </div>
           </div>
           <div className="w-[50%]">
@@ -25,10 +25,10 @@ export default function Home() {
       <section className="w-full h-full flex flex-col items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/fbdev-97ff9.appspot.com/o/site%2FIMG%20HEADER.png?alt=media&token=630f1dd5-ad37-4472-b887-5c85bc2f94c3')] bg-no-repeat bg-center  lg:hidden">
         <div className="w-full h-full flex flex-col items-center justify-center py-[4.4rem] backdrop-brightness-50 bg-black/5">
           <div className="w-[90%] max-w-[1080px] flex flex-col items-center justify-center ">
-            <div className="w-full flex flex-col items-center justify-center z-50">
+            <div className="w-full flex flex-col items-center justify-center text-white">
               <p className={`${titleFont.className} text-4xl mb-10`}>Desenvolvimento de sites e sistemas </p>
               <p className={`${textFont.className} text-xl`}>Empresa com foco em criação,melhoria e desempenho atendendo a sua necessidade com inovação e estratégia. Agende uma reunião.</p>
-              <div className="w-full flex flex-row items-center justify-between mt-12">
+              <div className="w-full flex flex-row items-center justify-evenly mt-12">
                 <Button className="w-[150px] rounded-xl" variant="default">AGENDAR</Button>
                 <Button className="w-[150px] rounded-xl" variant="default">PORTIFÓLIO</Button>
               </div>
@@ -36,8 +36,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* TODO versao mobile */}
     </>
   );
 }

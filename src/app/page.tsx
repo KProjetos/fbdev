@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import "./globals.css";
 import Devs from "@/components/devs";
 import Steps from "@/components/steps";
+import Cases from "@/components/cases";
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
 
       <Devs/>
       <Steps/>
+      <Cases/>
     </>
   );
 }

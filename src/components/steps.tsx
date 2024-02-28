@@ -1,5 +1,8 @@
 import { titleFont } from "@/app/font/title";
 import ArrowTitle from "@/app/images/arrowTitle";
+import Figma from "@/app/images/figma";
+import Firebase from "@/app/images/firebase";
+import React from "@/app/images/react";
 
 function Steps() {
   return (
@@ -104,7 +107,7 @@ function Steps() {
           <ArrowTitle color="#4C97A3" />
         </div>
 
-        <div className="w-full flex lg:flex-row flex-col items-center justify-center lg:justify-evenly gap-4">
+        <div className="w-full flex lg:flex-row flex-col items-center justify-center lg:justify-evenly gap-1">
           <div className="w-full h-[125px] px-4 flex flex-col items-start justify-start my-12">
             <h2 className="uppercase mb-4 text-2xl pl-2">
               Design

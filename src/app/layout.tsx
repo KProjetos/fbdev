@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import Head from "next/head";
 import { link } from "node:fs/promises";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <Header/>
           {children}
+          <Footer/>
         </body>
       </html>
     </>

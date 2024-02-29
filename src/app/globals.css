@@ -82,9 +82,17 @@
 
   .bg-principal{
     background-color: var(--principal);
+    
   }
 
   .title-detail{
     border-left: 2px solid var(--principal);
+  }
+
+  .bg-footer{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/fbdev-97ff9.appspot.com/o/site%2FfooterC.png?alt=media&token=e949a193-bb7f-4a2d-895f-6ce893cb05d8');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }

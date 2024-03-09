@@ -80,6 +80,10 @@
     background-color: #0e0e0ec6;
   }
 
+  .bg-filterWhite{
+    background-color: #ffffff92;
+  }
+
   .bg-principal{
     background-color: var(--principal);
     

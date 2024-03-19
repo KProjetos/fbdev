@@ -15,6 +15,15 @@ function Header() {
 		setModalIsOpen(false);
 	}
 
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('');
+
+  const sentEmail = async (e: any) => {
+    e.preventDefult()
+
+
+  }
+
   return (
     <>
       <header className="w-full flex flex-col items-center justify-center my-6">
@@ -104,6 +113,19 @@ function Header() {
             </div>
           </nav>
         </div>
+
+        <section className="w-[300px] h-[250px] flex flex-col items-center justify-center bg-slate-600">
+            <form action="" className="flex flex-col items-center justify-center">
+              <label htmlFor="">E-mail</label>
+              <input onChange={(e) => setEmail(e.target.value)}  value={email} type="email" />
+
+              <label htmlFor="">Mensagem</label>
+              <input onChange={(e) => setMessage(e.target.value)}  value={message} type="text" />
+
+              <button onClick={sentEmail}  type="submit" className="bg-red-800">Enviar</button>
+            </form>
+        </section>
+
       </header>
     </>
   );

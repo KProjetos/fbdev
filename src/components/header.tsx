@@ -6,6 +6,7 @@ import Menu from "@/app/images/menu";
 import Services from "@/app/images/services";
 import { titleFont } from "../app/font/title";
 import { useState } from "react";
+import { sendEmail } from "@/functions/email/sendEmail";
 
 
 function Header() {
@@ -18,11 +19,11 @@ function Header() {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('');
 
-  const sentEmail = async (e: any) => {
-    e.preventDefult()
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-
-  }
+    console.log("tes")
+  };
 
   return (
     <>
@@ -115,14 +116,14 @@ function Header() {
         </div>
 
         <section className="w-[300px] h-[250px] flex flex-col items-center justify-center bg-slate-600">
-            <form action="" className="flex flex-col items-center justify-center">
+            <form onSubmit={handleSubmit} action="" className="flex flex-col items-center justify-center">
               <label htmlFor="">E-mail</label>
               <input onChange={(e) => setEmail(e.target.value)}  value={email} type="email" />
 
               <label htmlFor="">Mensagem</label>
               <input onChange={(e) => setMessage(e.target.value)}  value={message} type="text" />
 
-              <button onClick={sentEmail}  type="submit" className="bg-red-800">Enviar</button>
+              <button type="submit" className="bg-red-800">Enviar</button>
             </form>
         </section>
 

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <section className="lg:w-full hidden lg:flex lg:flex-col lg:items-center lg:justify-center">
-        <div className="w-full flex flex-row items-center justify-between">
+        <div className="w-full flex flex-row items-center  sm:w-[90%] justify-between">
           <div className="w-[50%] px-12 flex flex-col items-center justify-center">
             <p className={`${titleFont.className} text-5xl mb-10`}>Desenvolvimento de sites e sistemas </p>
             <p className={`${textFont.className} text-xl`}>Empresa com foco em criação,melhoria e desempenho atendendo a sua necessidade com inovação e estratégia. Agende uma reunião.</p>
